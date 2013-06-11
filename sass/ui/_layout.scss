@@ -1,0 +1,68 @@
+body {
+	margin: 0 auto;
+	color: $body-font-color;
+	background: $body-bg;
+	font-weight:$body-font-weight;
+	font-style:$body-font-style
+}
+
+.container {
+	max-width: $container-max-width;
+	margin: 0 auto;
+}
+.container__narrow {
+	max-width: $container__narrow-max-width;
+}
+.page {
+	background : $page-background-color;
+}
+
+caption {
+	caption-side: bottom;
+	color: $grey-dark;
+	@include font-size($milli-size);
+	text-align: left;
+	margin: $half-spacing-unit 0;
+}
+th,td {
+	border-bottom: 1px solid $base-ui-color;
+	text-align: left;
+}
+thead th {
+border-bottom: 2px solid $grey;
+}
+th {
+	font-weight: 700;
+}
+
+.table--striped{
+    tbody tr:nth-of-type(odd){
+        background-color:$grey-light;
+    }
+}
+
+// responsive container, i.e for videos
+.flex-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.flex-container iframe,  
+.flex-container object,  
+.flex-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+

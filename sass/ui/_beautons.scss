@@ -1,0 +1,27 @@
+.btn {
+	&:hover {
+		box-shadow: 0 0 5px rgba(0,0,0,0.5);
+		color: $text-color-button;
+	}
+}
+
+.btn--primary {
+	background-color:$background-color-button-primary;
+	color: $text-color-button;
+}
+
+/**
+ * Positive actions; e.g. sign in, purchase, submit, etc.
+ */
+.btn--positive{
+	background-color:#16a085;
+	color:#fff;
+}
+
+/**
+ * Negative actions; e.g. close account, delete photo, remove friend, etc.
+ */
+.btn--negative{
+	background-color:#c0392b;
+	color:#fff;
+}

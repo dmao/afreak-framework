@@ -1,0 +1,8 @@
+
+main.js
+----------------
+lib/jquery-1.10.0.js
+lib/plugins/jquery-responsive-slides.js
+lib/plugins/responsive-nav.js
+app/app.js
+main.js

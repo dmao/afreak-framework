@@ -1,0 +1,1 @@
+define(["jquery","jquery.responsive.slide","responsiveNav"],function(e){e(function(){e("#js-captions").responsiveSlides({auto:!0,pager:!1,nav:!0,speed:500});var t=responsiveNav("#js-nav-responsive")})});

@@ -1,0 +1,136 @@
+/*! http://responsiveslides.com v1.54 by @viljamis */
+
+// Variables
+// Captions
+$include-caption: true; // include styles for captions
+$caption-background-color: rgba(0,0,0, .8);
+$caption-color: $white;
+$caption-font-size: font-size(18px);
+$caption-padding: $base-spacing-unit;
+
+// navigation
+$include-navigation : true;
+
+// pagination
+$include-pagination: true;
+$pagination-background-color: $base-ui-color;
+$pagination-background-color-current: $primary-color;
+
+
+.wrapper-rslides {
+  position:relative;
+  margin-bottom: $base-spacing-unit;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    &:first-child {
+      position: relative;
+      display: block;
+      float: left;
+    }
+  }
+  img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+  }
+  @if $include-caption {
+    .caption {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      font-size: $caption-font-size;
+      text-shadow: none;
+      color:$caption-color;
+      background: #000;
+      background: $caption-background-color;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: $caption-padding;
+      margin: 0;
+      max-width: none;
+    }
+  }
+}
+
+@if $include-navigation {
+  .rslides_nav {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    top: 52%;
+    left: 0;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 38px;
+    background: transparent inline_image("#{$img-path-plugins}/jquery-responsive-slides/arrow.gif") no-repeat left top;
+    margin-top: -45px;
+    &.next {
+
+      left: auto;
+      background-position: right top;
+      right: 0;
+    }
+  }
+}
+
+@if $include-pagination {
+  .rslides_tabs {
+    // list-style: none;
+    // padding: 0;
+    // background: rgba(0,0,0,.25);
+    // box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+    // -moz-box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+    // -webkit-box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+    // font-size: 18px;
+    // list-style: none;
+    // margin: 0 auto 50px;
+    // max-width: 540px;
+    // padding: 10px 0;
+    // text-align: center;
+    // width: 100%;
+    margin-top:$base-spacing-unit;
+    @extend .nav;
+    @extend .nav--banner;
+    li {
+      & + li {
+        margin-left: $half-spacing-unit;
+      }
+      &.rslides_here {
+        a {
+          background-color: $pagination-background-color-current;
+        }
+      }
+
+    }
+    a {
+      border-radius: 50%;
+      height:14px;
+      width:14px;
+      text-indent: -9999px;
+      background-color: $pagination-background-color;
+    }
+  }
+}
+
+
+

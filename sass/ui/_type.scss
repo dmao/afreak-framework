@@ -1,0 +1,70 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:  $header-font-family;
+	color:  $header-font-color;
+	font-weight: $header-font-weight;
+	font-style: $header-font-style;
+}
+
+h5,
+h6 {
+	text-transform: uppercase;
+}
+
+// prefers speed for mobil, use optimizeLegibility for portable & up
+@include media-query(lap-and-up) {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		text-rendering: optimizeLegibility;
+	}
+}
+
+small {
+	font-size:$small;
+}
+
+hr {
+	border: 0;
+	height: 0;
+	border-bottom: 1px solid $hr-border-color;
+}
+
+
+a {
+	color:$link-color;
+	text-decoration: $link-text-decoration;
+	-webkit-transition:$link-transition;
+	transition:$link-transition;
+	&:hover, &:active {
+		color: $link-color-hover
+	}
+}
+
+
+
+address {
+	font-style:normal;
+}
+
+::selection {
+	background: $primary-color; /* Safari */
+	color:$white;
+}
+::-moz-selection {
+	background: $primary-color; /* Firefox */
+	color:$white;
+}
+
+.logo {
+	margin:$half-spacing-unit 0 0 $half-spacing-unit;
+}
+

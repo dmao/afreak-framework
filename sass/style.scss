@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+/**
+ *
+ * sass --watch style.scss:style.min.css --style compressed
+ *
+ * Here we pull in some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
+
+
+/**
+ * Setup
+ */
+@import "vars";
+@import "inuit.css/inuit";
+
+
+
+
+
+/**
+ * She’s all yours, cap’n... Begin importing your stuff here.
+ */
+@import "ui/layout";
+@import "ui/type";
+@import "ui/beautons";
+@import "ui/forms";
+@import "ui/module";
+@import "ui/navs";
+@import "ui/icons-font";
+
+// do not compile for production
+@import "ui/style-guide";
+
+// comment the plugins that you don't use
+@import "ui/plugins/section";
+@import "ui/plugins/reveal";
+@import "ui/plugins/magnific-popup";
+@import "ui/plugins/responsive-slides";

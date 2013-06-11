@@ -1,0 +1,30 @@
+//
+// Modules Variables
+//
+$island-border-radius: $brand-round;
+$island-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+$regular-background-color: $base-ui-color;
+$highlight-background-color: $primary-color;
+$highlight-alt-background-color: $secondary-color;
+
+.island,
+.islet {
+	border-radius: $island-border-radius ;
+	-webkit-box-shadow: $island-box-shadow;
+	box-shadow: $island-box-shadow;
+}
+.regular {
+	background:$regular-background-color;
+	border: 1px solid darken($regular-background-color,5);
+}
+.highlight {
+	background: $highlight-background-color;
+	border: 1px solid darken($highlight-background-color,5);
+	color: $white;
+} 
+
+.highlight-alt {
+	background: $highlight-alt-background-color;
+	border: 1px solid darken($highlight-alt-background-color,5);
+	color: $grey-light;
+} 

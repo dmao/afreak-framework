@@ -1,0 +1,41 @@
+.body-font-color {
+	background: $body-font-color;
+}
+.header-font-color {
+	background: $header-font-color;
+}
+.link-color {
+	background: $link-color;
+}
+.link-color-hover {
+	background: $link-color-hover;
+}
+.primary-color {
+	background: $primary-color;
+}
+.secondary-color {
+	background: $secondary-color;
+}
+.base-ui-color {
+	background: $base-ui-color;
+	color:$grey-dark;
+}
+.grey {
+	background: $grey;
+}
+.grey-light {
+	background: $grey-light;
+	color:$grey-dark;
+}
+.grey-dark {
+	background: $grey-dark;
+}
+
+.demo-block{
+	padding:0.5em;
+	background-color:$primary-color;
+	color:#fff;
+	border-radius:4px;
+}
+
+

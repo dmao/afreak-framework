@@ -1,0 +1,67 @@
+legend {
+	@extend h1;
+}
+
+fieldset{
+	padding:0;
+	border: none;
+	margin: 0 0 $base-spacing-unit 0;
+}
+
+.text-input,
+textarea {
+	background-color: $grey-light;
+	box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
+	border: 1px solid $grey;
+	border-color: rgba(0,0,0,0.2);
+	border-radius: $brand-round;
+	padding: 0.5em;
+	vertical-align: middle;
+	width: 100%;
+	&:focus {
+		background-color: #fff;
+		box-shadow: inset 0 1px 0 rgba(17,34,187,0.1);
+		border: 1px solid  $primary-color;
+		border-color: rgba( $primary-color,0.5);
+	}
+}
+select.text-input {
+	background: $grey-light inline_image("#{$img_path_ico}/black-triangle.gif") no-repeat 95% 50%;
+	background-size: 1em;
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
+	margin-right: 0.5em;
+	border: 1px solid #ccc;
+	border-radius: 0.25em;
+	padding: 0.5em 0.75em;
+	display: inline-block;
+	position: relative;
+	-webkit-appearance: button;
+	appearance: normal;
+	width: 100%;
+}
+
+.additional {
+	color:  $grey-dark;
+}
+abbr[title="Required"] {
+	color: #a00;
+	font-size: 1.25em;
+	font-weight: 400;
+	border: 0;
+}
+
+.form--actions {
+	// border-top: 1px solid $grey-light;
+	// margin-top: $base-spacing-unit 0 0 0;
+	padding: 0 0 $base-spacing-unit 0;
+}
+.input-text__search {
+	border-radius:14px;
+}
+.search-trigger {
+	margin:$half-spacing-unit 0 0 $half-spacing-unit;
+	display:inline-block;
+	color:  $base-ui-color;
+}
