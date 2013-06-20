@@ -13,6 +13,9 @@
 .primary-color {
 	background: $primary-color;
 }
+.primary-color__complement {
+	background: complement($primary-color);
+}
 .secondary-color {
 	background: $secondary-color;
 }
