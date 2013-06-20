@@ -16,3 +16,4 @@ Thumbs.db
 # Sass generated folder #
 ######################
 .sass-cache/
+sass/.DS_Store
